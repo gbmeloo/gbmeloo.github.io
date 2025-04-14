@@ -5,10 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
     items.forEach((item, i) => {
       setTimeout(() => {
         item.classList.add("show");
-      }, i * 300); // 300ms delay between items
+      }, i * 750); // 750ms delay between items
     });
-
-    
 
     // Mouse position tracking commented for future panning implementation
     // const wrapper = document.querySelector(".my-image");
