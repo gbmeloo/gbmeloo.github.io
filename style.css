@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+.animated-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease-out, transform 0.6s ease-out;
+  }
+  
+  .animated-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .image-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .image-wrapper img {
+    transition: transform 0.2s ease;
+    will-change: transform;
+  }
+
+  .my-image {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
